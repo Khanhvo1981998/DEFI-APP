@@ -1,0 +1,16 @@
+
+
+.card-container {
+    padding: 20px;
+    background-color: #131330;
+    color: #9f9fc8;
+    border-radius: 10px;
+    background: linear-gradient(#131330 0 0) padding-box, linear-gradient(to top left, transparent, #30bddc);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+    border: double 1px transparent;
+
+    h1 {
+        color: #fff;
+    }
+}

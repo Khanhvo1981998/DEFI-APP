@@ -1,0 +1,16 @@
+.footer-container {
+  width: 100%;
+  display: flex;
+  background-color: #131330;
+  padding: 20px;
+}
+.footer-container .footer-copyright {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.footer-container .footer-copyright p {
+  color: #9f9fc8;
+  font-size: 1.5rem;
+}/*# sourceMappingURL=Footer.css.map */

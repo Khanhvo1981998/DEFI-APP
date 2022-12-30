@@ -1,0 +1,140 @@
+
+.dev-section-container{
+
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    margin: 40px 0;
+    .dev-section-title{
+
+        .highlighted{
+            background: linear-gradient(#30bddc 0%, #5189e1 100%);
+            border-radius: 5px;
+            padding: 0 10px;
+        }
+    }
+
+    .dev-section-wrapper{
+
+        display: flex;
+        flex-direction: row;
+            .dev-section-text{
+
+                flex-basis: 50%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+
+                    p {
+                        color: #9f9fc8;
+                        font-size: 1.5rem;
+                    }
+                    .dev-section-description{
+
+
+                    }
+            }
+
+        .btn-wrapper{
+
+            button {
+                margin: 0 10px;
+            }
+
+            .primary{
+                color: white;
+                background: linear-gradient(#30bddc 0%, #5189e1 100%);
+                padding: 12px 16px;
+                border-radius: 3px;
+                border: none;
+            }
+
+            .secondary{
+
+                background-color: white;
+                padding: 12px 16px;
+                border-radius: 3px;
+                border: none;
+                span {
+                    background-image: linear-gradient(60deg, #30bddc, #5189e1);
+                    color: transparent;
+                   
+                    -webkit-background-clip: text;
+                }
+            }
+        }
+
+        .dev-section-image{
+
+            display: flex;
+            justify-content: center;
+
+            img {
+                max-height: 300px;
+            }
+
+        }
+    }
+}
+
+@media only screen and (max-width:768px) {
+    
+    .dev-section-container{
+
+        flex-direction: column;
+        .dev-section-title{
+    
+            margin-bottom: 20px;
+            .highlighted{
+              
+            }
+        }
+    
+        .dev-section-wrapper{
+    
+            flex-direction: column;
+            .dev-section-text{
+    
+                margin-bottom: 20px;
+        
+                p {
+                          
+                        }
+                        .dev-section-description{
+    
+    
+                        }
+                }
+    
+            .btn-wrapper{
+    
+                button {
+                
+                }
+    
+                .primary{
+                   
+                }
+    
+                .secondary{
+    
+                   
+                    span {
+                       
+                    }
+                }
+            }
+    
+            .dev-section-image{
+    
+            
+    
+                img {
+                  
+                }
+    
+            }
+        }
+    }
+}
