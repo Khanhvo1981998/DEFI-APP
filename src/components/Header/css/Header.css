@@ -130,7 +130,7 @@
   display: none;
 }
 
-@media only screen and (max-width: 768px) {
+@media all and (max-width: 768px) {
   .header-container {
     justify-content: space-between;
     height: 78px;
@@ -152,6 +152,60 @@
     justify-content: flex-end;
     margin-top: 12px;
     margin-left: 450px;
+  }
+  .header-container .hamburger path {
+    fill: white;
+  }
+  .header-container .hamburger svg {
+    width: 30px;
+    height: 30px;
+  }
+  .header-container .wallet-btn {
+    display: none;
+  }
+  .menu-overlay {
+    position: absolute;
+    top: 78px;
+    left: 0;
+    width: 100%;
+    height: calc(100vh - 77px);
+    background-color: #131330;
+    border-top: 1px solid black;
+  }
+  .menu-overlay .menu-links {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
+  .menu-overlay .menu-links a {
+    text-decoration: none;
+  }
+}
+@media all and (max-width: 480px) {
+  .header-container {
+    justify-content: space-between;
+    height: 78px;
+    padding: 10px 30px;
+  }
+  .header-container .menu {
+    display: none;
+  }
+  .header-container button {
+    border-radius: 10px;
+    padding: 10px 20px;
+    text-transform: uppercase;
+  }
+  .header-container .hamburger {
+    background: none;
+    border: none;
+    padding: 0px;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 12px;
+    margin-left: 100px;
   }
   .header-container .hamburger path {
     fill: white;

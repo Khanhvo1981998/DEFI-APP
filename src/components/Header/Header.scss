@@ -157,7 +157,7 @@
 
 
 
-@media only screen and (max-width: 768px) {
+@media all and (max-width: 768px) {
 
     .header-container {
 
@@ -191,6 +191,86 @@
                 justify-content: flex-end;
                 margin-top: 12px;
                 margin-left: 450px;
+            }
+            .hamburger path {
+                fill: white;
+              }
+
+            .hamburger svg{
+                width: 30px;
+                height: 30px;
+            }
+
+            .wallet-btn{
+                display: none;
+                    .primary {
+                        
+                    }
+            }
+
+
+        
+    
+    }
+    .menu-overlay {
+        position: absolute;
+        top: 78px;
+        left: 0;
+        width: 100%;
+        height: calc(100vh - 77px);
+        background-color: #131330;
+        border-top: 1px solid black;
+
+            .menu-links {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                justify-content: center;
+                text-align: center;
+                align-items: center;
+                
+                a{
+                    text-decoration: none;
+                }
+            }
+       }
+}
+
+
+@media all and (max-width: 480px) {
+
+    .header-container {
+
+        justify-content: space-between;
+        height: 78px;  
+        padding: 10px 30px;
+    
+            .menu {
+                display:none;
+                
+        
+                .menu-links {
+                        
+        
+                    a {
+                 
+                    }
+                }
+            }
+            button {
+                border-radius: 10px;
+                padding: 10px 20px;
+                text-transform: uppercase;
+        
+            }
+            .hamburger {
+                background: none;
+                border: none;
+                padding: 0px;
+                display: flex;
+                justify-content: flex-end;
+                margin-top: 12px;
+                margin-left: 100px;
             }
             .hamburger path {
                 fill: white;
